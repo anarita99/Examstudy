@@ -10,7 +10,9 @@ The function should be prototyped as follows:
 
 size_t	ft_strcspn(const char *s, const char *reject);
 */
+
 #include <stdio.h>
+
 size_t	ft_strcspn(const char *s, const char *reject)
 {
 	size_t	i;
@@ -29,4 +31,11 @@ size_t	ft_strcspn(const char *s, const char *reject)
 		i++;
 	}
 	return(i);
+}
+#include <stdio.h>
+int main()
+{
+	char *s = "hello";
+	const char *reject = "el";
+	printf("%zu\n", ft_strcspn(s, reject));
 }
