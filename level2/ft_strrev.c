@@ -30,4 +30,5 @@ char	*ft_strrev(char *str)
 		len--;
 		i++;
 	}
+	return (str);
 }
